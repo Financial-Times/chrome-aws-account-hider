@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "Simple AWS Account Hider",
+  "name": "AWS Account Hider",
   "description": "This extension hides AWS accounts we're not interested in",
   "version": "1.0.0",
   "content_scripts": [
