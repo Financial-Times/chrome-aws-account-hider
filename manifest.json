@@ -3,7 +3,7 @@
 
   "name": "AWS Account Hider",
   "description": "This extension hides AWS accounts we're not interested in",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "icons": {
     "128": "sam-128.png",
     "48": "sam-48.png"
