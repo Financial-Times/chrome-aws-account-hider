@@ -2,11 +2,11 @@
   "manifest_version": 2,
 
   "name": "AWS Account Hider",
-  "description": "This extension hides AWS accounts we're not interested in",
-  "version": "1.0.1",
+  "description": "This extension allows filtering of the accounts shown on the AWS SAML login screen.",
+  "version": "1.0.2",
   "icons": {
-    "128": "sam-128.png",
-    "48": "sam-48.png"
+    "128": "icon-128.png",
+    "48": "icon-48.png"
   },
   "content_scripts": [
   {
