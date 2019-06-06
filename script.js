@@ -64,7 +64,7 @@
     const accounts = document.querySelectorAll('fieldset > div.saml-account');
     accounts.forEach((account) => {
       var name = account.querySelector('.saml-account-name').textContent;
-      if(-1 == name.indexOf(accountFilter)) {
+      if(null == name.match(accountFilter)) {
         account.style.display = 'none';
       } else {
         account.style.display = '';
