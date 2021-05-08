@@ -13,7 +13,7 @@
     const label = document.createElement('label');
     label.setAttribute('for', accountFilter);
     label.textContent = 'Account Filter: ';
-    
+
     input = document.createElement('input');
     input.type = 'text';
     input.name = 'accountFilter';
@@ -30,7 +30,7 @@
     div.appendChild(input);
     div.appendChild(submit);
 
-    header.insertAdjacentElement('afterend', div); 
+    header.insertAdjacentElement('afterend', div);
   }
 
   function onKeyUpHandler(event) {
@@ -49,7 +49,7 @@
     saved.innerHTML = '&#160;Saved';
     saved.style.color = 'green';
     event.target.insertAdjacentElement('afterend',saved);
-    setTimeout(() => {saved.remove()}, 2000);    
+    setTimeout(() => {saved.remove()}, 2000);
     return false;
   }
 
@@ -64,7 +64,7 @@
     const accounts = document.querySelectorAll('fieldset > div.saml-account');
     accounts.forEach((account) => {
       var name = account.querySelector('.saml-account-name').textContent;
-      if(-1 == name.indexOf(accountFilter)) {
+      if(null == name.match(accountFilter)) {
         account.style.display = 'none';
       } else {
         account.style.display = '';
